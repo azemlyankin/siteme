@@ -1,0 +1,315 @@
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+a {
+	text-decoration: none;
+	color: #000
+}
+/* конец кода сброса стилей браузера */
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+.wrapper {
+	background-color: #bfbeeb;
+}
+.navBar {
+	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.navBar a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	text-transform: uppercase;
+	
+}
+li {
+	list-style: none;
+}
+.navLink {
+	position: relative;
+}
+
+.navLink ul {
+	position: absolute;
+	z-index: 100;
+	top: 1.5em;
+	left: -0.5em;
+
+
+}
+
+.navLink ul li {
+	padding: 0.5em;
+	display: block;
+	background-color: #bfbeeb;
+	width: 100%;
+	
+}
+
+.hide {
+	visibility: hidden;
+	transition: .5s;
+}
+
+.navInput {
+	display: flex;
+}
+
+.navInput img {
+	margin-left: 0.7em;
+}
+
+.navLogo {
+	margin: 0.5em 0;
+}
+.navLogo a {
+	color: #5d5bc2;
+	font-family: 'Redressed';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.3em;
+	text-shadow: -8px 0px 4px #fff;
+}
+
+
+/* _______________________________________________________ */
+
+.cart {
+	margin-top: 35px;
+	margin-left: 10%;
+	border: #000 solid 2px;
+	width: 80%;
+}
+.img {
+	background-image: url(Rectangle\ 2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+	padding: 3em 20px;
+}
+.img img {
+	display: block;
+	margin: 0 auto;
+	width: 60% !important;
+	
+}
+.description {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Playfair Display', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	margin: 1em 0 0 0;
+}
+.prise {
+	text-align: center;
+	margin: 1em 0 1em 0;
+	font-family: 'Playfair Display ', serif;
+	font-style: normal;
+	font-size: 1.1em;
+}
+.newPrise {
+	margin-right: 0.6em;
+	
+}
+.oldPrise {
+	color: #ab1313;
+	text-decoration: line-through;
+}
+
+.topScript {
+	text-align: center;
+	margin-top: 10em;
+	background: url(elem1.png) no-repeat 15% top, 
+	url(elem2.png) no-repeat 85% top;
+	height: 200px;
+	
+}
+.topScript p {
+	display: block;
+	padding-top: 3em;
+	font-family: 'Cormorant Unicase';
+	font-size: 1.2em;
+	margin-bottom: 2.7em;
+}
+.btn {
+	background-color: #BFBEEB;
+	padding: 0.56em 2.5em;
+	color: #000;
+	font-family: 'Playball ';
+	font-size: 1.2em;
+	border-radius: 13px;
+	
+}
+.catalog {
+	margin-top: 8em;
+
+}
+.catalogCart {
+	width: 100%;
+	display: flex;
+	justify-content:space-between;
+	height: 25em;
+	background-color: #bfbeeb;
+	margin-bottom: 1.75em;
+}
+
+.catalogCart img {
+	margin: 15px 45px 0 0;
+	
+	
+}
+.catalogCart h2 {
+	align-self: center;
+	font-family: 'PoetsenOne';
+	font-size: 5em;
+	text-align: center;
+	color: #fff;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin-left: 7%;
+}
+
+.header {
+	position: relative;
+}
+.owl-prev{
+	position: absolute;
+	left: -10%;
+	bottom: 45%;
+
+	width: 0;
+	height: 0;
+	border-style: solid !important;
+	border-width: 4em 3.5em 4em 3.5em !important; 
+	border-color: transparent #BFBEEB transparent transparent !important; 
+	opacity: 0.2;
+}
+.owl-prev:hover {
+	opacity: 0.9 ;
+}
+.owl-next{
+	position: absolute;
+	bottom: 45%;
+	right: -10%;
+	width: 0;
+	height: 0;
+	border-style: solid !important;
+	border-width: 4em 3.5em 4em 3.5em !important; 
+	border-color: transparent transparent transparent #BFBEEB !important; 
+	opacity: 0.2;
+}
+.owl-next:hover {
+	opacity: 0.9 ;
+}
+.owl-dots {
+	text-align: center ;
+	margin-top: 2em;
+}
+.owl-dot {
+	width: 2.3em;
+	height: 0.5em;
+	background-color: #fff !important;
+	border: 1px solid black !important;
+	margin-right: 0.8em;
+}
+.owl-dot.active {
+	background-color: #BFBEEB !important;
+}
+
+
+/* стили для ширины крупнее мобильных */
+/* стили для ширины 400 пикселов и выше */
+@media (min-width: 400px) {
+ 
+}
+
+/* стили для ширины крупнее фаблетов */
+/* стили для ширины 550 пикселов и выше */
+@media (min-width: 550px) {
+	
+}
+
+/* стили для ширины крупнее планшетов */
+
+/* стили для ширины 750 пикселов и выше */
+@media (min-width: 750px) {
+	.topScript p {
+		font-size: 80%;
+	}
+	.topScript {
+		text-align: center;
+
+		background: url(elem1.png) no-repeat 15% top, 
+		url(elem2.png) no-repeat 85% top;
+		background-size: 15%;
+		
+		
+	}
+}
+
+/* стили для ширины крупнее компьютерных мониторов */
+/* стили для ширины 1000 пикселов и выше */
+@media (min-width: 1000px) {
+	.topScript p {
+		font-size: 1em;
+	}
+}
+
+
+/* стили для ширины крупнее компьютерных HD-мониторов */
+/* стили для ширины 1200 пикселов и выше */
+@media (min-width: 1200px) {
+	.topScript p {
+		font-size: 1.2em;
+	}
+}
+
+
+
+
+
+
+
